@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/taglineTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoIV"
+        android:layout_centerHorizontal="true"
+        android:text="GoodDealsNearby"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="190dp"
+        android:layout_height="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <TextView
+        android:id="@+id/usernameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="226dp"
+        android:layout_centerHorizontal="true"
+        android:text="Username:"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="239dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp" />
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/usernameTV"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text|textPersonName"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColorLink="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/passwordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/usernameET"
+        android:text="Password:"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:layout_alignLeft="@+id/usernameTV" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passwordTV"
+        android:ems="10"
+        android:backgroundTint="@android:color/darker_gray"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordET"
+        android:layout_centerHorizontal="true"
+        android:background="#e42028"
+        android:text="Log in"
+        android:onClick="onLogin"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#e4565c"
+        android:onClick="startReg"
+        android:text="Register"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

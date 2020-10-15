@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageButton
+        android:id="@+id/logoIV"
+        android:layout_width="177dp"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/transparent"
+        android:onClick="pickImg"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/camera"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <TextView
+        android:id="@+id/usernameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoIV"
+        android:layout_toStartOf="@+id/logoIV"
+        android:text="Username:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/usernameTV"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:backgroundTint="@android:color/darker_gray"
+        android:inputType="text|textPersonName"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/phoneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/usernameET"
+        android:layout_centerHorizontal="true"
+        android:text="Phone:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/phoneTV"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/EmailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/phoneET"
+        android:text="Email:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/usernameTV" />
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/EmailView"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/pwTV"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/emailET"
+        android:text="Password:"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/usernameTV" />
+
+    <EditText
+        android:id="@+id/pwET"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/pwTV"
+        android:ems="10"
+        android:backgroundTint="@android:color/darker_gray"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/usernameTV" />
+
+    <TextView
+        android:id="@+id/cpassTV"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/pwET"
+        android:text="Confirm Password:"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/usernameTV" />
+
+    <EditText
+        android:id="@+id/cpassET"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/cpassTV"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/registerBTN"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpassET"
+        android:layout_centerHorizontal="true"
+        android:background="#e42028"
+        android:text="Register"
+        android:onClick="onConfirmClicked"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

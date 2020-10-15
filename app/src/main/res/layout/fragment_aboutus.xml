@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="190dp"
+        android:layout_height="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/taglineTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoIV"
+        android:layout_centerHorizontal="true"
+        android:text="GoodDealsNearby"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <TextView
+        android:id="@+id/aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="About Us"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taglineTV"
+        android:layout_centerHorizontal="true"
+        android:text="Company: Nanyang Polytechnic"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company"
+        android:layout_alignStart="@+id/company"
+        android:layout_marginTop="10dp"
+        android:text="Developer: Ye Jieyi"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/company"
+        android:layout_below="@+id/developer"
+        android:background="@color/colorPrimary"
+        android:padding="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Contact: 65-93464494"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/company"
+        android:layout_below="@+id/contact"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Email: sunny_ye@outlook.com"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+</RelativeLayout>

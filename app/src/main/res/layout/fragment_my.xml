@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyFragment">
+
+
+
+    <ImageButton
+        android:id="@+id/logoIV"
+        android:layout_width="160dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="fitCenter"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <TextView
+        android:id="@+id/usernameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoIV"
+        android:layout_toStartOf="@+id/logoIV"
+        android:text="Username:"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="239dp" />
+
+    <TextView
+        android:id="@+id/usernameET"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/usernameTV"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:inputType="text|textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/phoneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/usernameET"
+        android:layout_centerHorizontal="true"
+        android:text="Phone:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/phoneET"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/phoneTV"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/darker_gray"
+        android:inputType="phone"
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/EmailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/phoneET"
+        android:text="Email:"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/usernameTV" />
+
+    <TextView
+        android:id="@+id/emailET"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameTV"
+        android:layout_alignStart="@+id/usernameTV"
+        android:layout_below="@+id/EmailView"
+        android:backgroundTint="@android:color/darker_gray"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/registerBTN"
+        android:layout_width="332dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/emailET"
+        android:background="#e42028"
+        android:text="Edit Profile"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/logoutBTN"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerBTN"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="#e42028"
+        android:text="Logout"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

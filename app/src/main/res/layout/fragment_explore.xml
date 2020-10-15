@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExploreFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/foodBTN"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/food"
+                android:text="Food"
+                android:textColor="@android:color/white"
+                android:textSize="30pt"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/entBTN"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/shopBTN"
+                android:background="@drawable/entertainment"
+                android:text="Entertainment"
+                android:textColor="@android:color/white"
+                android:textSize="18pt" />
+
+            <Button
+                android:id="@+id/shopBTN"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/hotelBTN"
+                android:background="@drawable/shopping"
+                android:text="Shopping"
+                android:textColor="@android:color/white"
+                android:textSize="25pt" />
+
+            <Button
+                android:id="@+id/hotelBTN"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@id/foodBTN"
+                android:background="@drawable/hotel"
+                android:text="Hotel"
+                android:textColor="@android:color/white"
+                android:textSize="30pt" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
